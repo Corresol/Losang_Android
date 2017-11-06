@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_signup">
+    </include>
+
+    <LinearLayout
+        android:layout_below="@+id/tool_bar"
+        android:layout_above="@+id/bottomparent"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight=".8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <RelativeLayout
+                android:gravity="bottom"
+                android:layout_width="140dp"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:background="@drawable/signup_logo"
+                    android:gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="120dp" />
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+
+                    android:id="@+id/usernametext"
+                    android:gravity="center_vertical"
+                    android:textColor="#AAAAAA"
+                    android:text="FULL NAME"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".6"/>
+                <EditText
+
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:id="@+id/usernameedit"
+                    android:singleLine="true"
+                    android:text="abcdefghi"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:background="#AAAAAA"
+                    android:layout_below="@+id/nametextview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp">
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+
+                    android:id="@+id/emailtext"
+                    android:gravity="center_vertical"
+                    android:textColor="#aaaaaa"
+                    android:text="EMAIL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".6"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <EditText
+
+                        android:background="@android:color/transparent"
+                        android:id="@+id/emailedit"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="abcdev@gmail.com"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:background="#aaaaaa"
+                    android:layout_below="@+id/nametextview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp">
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+
+                    android:id="@+id/passwordtext"
+                    android:gravity="center_vertical"
+                    android:textColor="#aaaaaa"
+                    android:text="PASSWORD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".6"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <EditText
+                        android:id="@+id/passwordedit"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="abc"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:background="#aaaaaa"
+                    android:layout_below="@+id/nametextview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp">
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+
+                    android:id="@+id/birthdaytext"
+                    android:gravity="center_vertical"
+                    android:textColor="#aaaaaa"
+                    android:text="BIRTHDAY"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".6"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <EditText
+
+                        android:background="@android:color/transparent"
+                         android:id="@+id/birthdayedit"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Oct 3,1990"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:background="#aaaaaa"
+                    android:layout_below="@+id/nametextview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp">
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+                <TextView
+                    android:background="#BB2221"
+                    android:id="@+id/craetetext"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Create"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+
+
+        >
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_weight="1"
+
+                android:id="@+id/alreadytext"
+
+                android:gravity="center"
+                android:text="ALREADY HAVE AN ACCOUNT ?"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/signintext"
+                android:onClick="close"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/alreadytext"
+                android:gravity="center"
+                 android:text="SIGN IN"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

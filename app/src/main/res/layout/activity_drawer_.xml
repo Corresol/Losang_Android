@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.sixsquarepc02.losang.Drawer_Activity">
+    <RelativeLayout
+        android:onClick="close"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_width="35dp"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/close"
+            android:onClick="close"
+            android:gravity="center"
+            android:text="X"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+       android:id="@+id/user"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:onClick="close"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@drawable/circular_border"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/user"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_above="@+id/bottomparent"
+        android:orientation="vertical"
+        android:layout_below="@+id/user"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <RelativeLayout
+            android:onClick="home"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/home_text"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Home"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:onClick="profile"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/profile_text"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Profile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:onClick="chat"
+                android:id="@+id/chat_text"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Chat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:onClick="projects"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/projects_text"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Projects"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:onClick="calendar"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/calendar_text"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Calendar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+
+        android:id="@+id/bottomparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="160dp"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:onClick="logout"
+           android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:background="@drawable/logout_icon"
+                android:gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/logout_text"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+               android:text="LOG OUT"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

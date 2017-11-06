@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:id="@+id/menu_layout">
+
+                    <RelativeLayout
+                        android:id="@+id/home_icon"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp">
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/home_img"
+                            android:onClick="home"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/home_bootom"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="Home"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/home_icon"/>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                   >
+
+                    <RelativeLayout
+                        android:id="@+id/profile_icon"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp">
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                              android:id="@+id/profile_img"
+                            android:onClick="profile"
+                           />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/profile_bottom"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="Profile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profile_icon"/>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="chat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                   >
+
+                    <RelativeLayout
+                        android:id="@+id/chat_icon"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp">
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/chat_img"
+                            android:onClick="chat"
+                           />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/chat_bottom"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="Chat"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/chat_icon"/>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/projects_icon"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp">
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                             android:id="@+id/projects_img"
+                            android:onClick="projects"
+                           />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/projects_bottom"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="Projects"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/projects_icon"/>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/calendar_icon"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp">
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/calendar_img"
+                            android:onClick="calendar"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/calendar_bottom"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="Calendar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/calendar_icon"/>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+

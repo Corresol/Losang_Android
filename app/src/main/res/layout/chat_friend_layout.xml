@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_chatfriend">
+    </include>
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_above="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+
+
+            android:id="@+id/chat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/red"
+                android:layout_alignParentRight="true"
+                android:layout_width="130dp"
+                android:layout_height="55dp"
+                android:background="@drawable/red_buble"/>
+            <TextView
+                android:layout_below="@+id/red"
+                android:id="@+id/blue"
+                android:layout_alignParentLeft="true"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@drawable/blue_buble"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="#aaaaaa"
+       android:layout_above="@+id/bottomparent"
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+
+        android:id="@+id/bottomparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <RelativeLayout
+
+                android:layout_weight="2.3"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/fileattach_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/searchbar"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <EditText
+                        android:paddingLeft="5dp"
+                        android:hint="New Message"
+                        android:background="@drawable/border"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:id="@+id/msg_text"
+                        android:layout_width="250dp"
+                        android:layout_height="fill_parent" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/searchimag"
+                android:layout_weight="2.1"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/send"
+                    android:gravity="center"
+                    android:textColor="#AAAAAA"
+                    android:text="Send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

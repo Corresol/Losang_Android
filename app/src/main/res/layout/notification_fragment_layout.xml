@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_notification">
+    </include>
+
+
+    <LinearLayout
+        android:layout_below="@+id/tool_bar"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp">
+            <TextView
+                android:textColor="#000000"
+                android:id="@+id/text1"
+                android:text="ahagsgsdsvdgssfgh"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:text="2 miutes ago"
+                android:id="@+id/text2"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+
+
+                android:layout_below="@+id/parent"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp">
+                <LinearLayout
+
+                    android:background="#aaaaaa"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp">
+            <TextView
+                android:textColor="#000000"
+                android:id="@+id/text3"
+                android:text="ahagsgsdsvdgssfgh"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:text="2 miutes ago"
+                android:id="@+id/text4"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+
+
+                android:layout_below="@+id/parent"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp">
+                <LinearLayout
+
+                    android:background="#aaaaaa"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

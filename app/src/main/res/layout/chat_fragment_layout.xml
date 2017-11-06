@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_chatfragment">
+    </include>
+
+    <LinearLayout
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/r_s"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#AAAAAA"
+
+        >
+        <LinearLayout
+            android:id="@+id/recent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/recent_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="RECENT"
+                android:gravity="center"
+                android:textColor="#ffffff"
+
+
+
+
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/recent_under"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:background="#ffffff"
+                >
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/allcontacts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:id="@+id/allcontacts_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="ALL CONTACTS"
+                android:gravity="center"
+                android:textColor="#ffffff"
+
+
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/all_under"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:background="#AAAAAA"
+                >
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+
+        android:id="@+id/recent_parent"
+        android:layout_below="@+id/r_s"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="130dp">
+
+        <LinearLayout
+
+            android:id="@+id/parent"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+
+                android:gravity="center"
+                android:layout_weight="1.3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <RelativeLayout
+
+                        android:gravity="center"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp">
+                    <TextView
+                        android:background="@drawable/circle_red_filled"
+
+                        android:textColor="#ffffff"
+                        android:text="A"
+                        android:textSize="28dp"
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_below="@+id/tool_bar"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/recent_name"
+                    android:paddingTop="16dp"
+                    android:text="ahagsgs"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/recent_mesg"
+                    android:paddingBottom="16dp"
+                    android:text="hggggyy"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1.1"
+                android:layout_below="@+id/tool_bar"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/recent_time"
+                    android:paddingTop="16dp"
+                    android:text="10:15 AM"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/recent_date"
+                    android:paddingBottom="16dp"
+                    android:text="05/Feb/2017"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@+id/parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+
+                android:background="#aaaaaa"
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/all_parent"
+        android:layout_below="@+id/r_s"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="130dp">
+
+        <LinearLayout
+            android:id="@+id/parenttwo"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1.3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:background="@drawable/circular_border"
+                    android:gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/user"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_below="@+id/tool_bar"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/all_name"
+                    android:paddingTop="16dp"
+                    android:text="ahagsgs"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/all_msg"
+                    android:paddingBottom="16dp"
+                    android:text="hggggyy"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+
+
+                    android:gravity="center"
+                    android:background="@drawable/chat_red_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@+id/parenttwo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+
+                android:background="#aaaaaa"
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

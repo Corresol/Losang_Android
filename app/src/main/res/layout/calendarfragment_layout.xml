@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_calendarfragment">
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/calendar_parent"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp">
+
+        <CalendarView
+
+            android:id="@+id/calendar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </CalendarView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/calendar_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:id="@+id/parent"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_below="@+id/tool_bar"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp">
+                    <TextView
+                        android:textColor="#000000"
+                        android:id="@+id/calendar_name"
+                         android:textStyle="bold"
+                        android:text="ahagsgs"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/img"
+                            android:paddingBottom="16dp"
+                            android:background="@drawable/datespan"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="#aaaaaa"
+                            android:id="@+id/calendar_date"
+                            android:layout_toRightOf="@+id/img"
+                            android:paddingLeft="20dp"
+                            android:text="04/02/2017-17/02/2017"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        android:background="@drawable/circular_border"
+                        android:gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:src="@drawable/user"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_below="@+id/parent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+
+                    android:background="#aaaaaa"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

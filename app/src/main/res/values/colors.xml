@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BB2221</color>
+    <color name="colorPrimaryDark">#A9091C</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="focuseddatecolor">#000000</color>
+</resources>

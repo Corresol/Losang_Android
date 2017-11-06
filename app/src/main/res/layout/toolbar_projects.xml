@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/toolbarhome"
+    android:background="@color/colorPrimary"
+    android:layout_alignParentTop="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/project_text"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="Projects"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:onClick="drawer"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="fill_parent">
+            <TextView
+                android:gravity="center"
+               android:background="@drawable/drawer_icon"
+                android:textColor="#ffffff"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.Toolbar>
+
